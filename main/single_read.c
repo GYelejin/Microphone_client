@@ -225,13 +225,14 @@ void app_main(void)
     ESP_ERROR_CHECK(adc1_config_width(ADC_WIDTH_BIT_DEFAULT));
     ESP_ERROR_CHECK(adc1_config_channel_atten(ADC1_EXAMPLE_CHAN0, ADC_EXAMPLE_ATTEN));
     xTaskCreate(tcp_client_task, "tcp_client", 4096, NULL, 5, NULL);
-    while (1) {
+
+    while (0) {
         adc_raw[0][0] &= 0x0FFFF;
         adc_raw[0][0] = adc1_get_raw(ADC1_EXAMPLE_CHAN0);
-        ESP_LOGI(TAG_CH[0][0], "raw  data: %d", adc_raw[0][0]);
+        //ESP_LOGI(TAG_CH[0][0], "raw  data: %d", adc_raw[0][0]);
         if (cali_enable) {
             voltage = esp_adc_cal_raw_to_voltage(adc_raw[0][0], &adc1_chars);
-            ESP_LOGI(TAG_CH[0][0], "cali data: %d mV", voltage);
+            //ESP_LOGI(TAG_CH[0][0], "cali data: %d mV", voltage);
         }
         vTaskDelay(pdMS_TO_TICKS(10));
     }
