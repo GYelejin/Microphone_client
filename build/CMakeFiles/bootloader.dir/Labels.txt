@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/admin/Documents/Development/esp32/microphone_adc_dma_i2s_tcp_soket/build/CMakeFiles/bootloader
+/home/admin/Documents/Development/esp32/microphone_adc_dma_i2s_tcp_soket/build/CMakeFiles/bootloader.rule
+/home/admin/Documents/Development/esp32/microphone_adc_dma_i2s_tcp_soket/build/CMakeFiles/bootloader-complete.rule
+/home/admin/Documents/Development/esp32/microphone_adc_dma_i2s_tcp_soket/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/admin/Documents/Development/esp32/microphone_adc_dma_i2s_tcp_soket/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/admin/Documents/Development/esp32/microphone_adc_dma_i2s_tcp_soket/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/admin/Documents/Development/esp32/microphone_adc_dma_i2s_tcp_soket/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/admin/Documents/Development/esp32/microphone_adc_dma_i2s_tcp_soket/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/admin/Documents/Development/esp32/microphone_adc_dma_i2s_tcp_soket/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/admin/Documents/Development/esp32/microphone_adc_dma_i2s_tcp_soket/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
