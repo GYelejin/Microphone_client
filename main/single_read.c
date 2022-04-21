@@ -82,7 +82,7 @@ static const char *TAG_CH[2][10] = {{"ADC1_CH7"}};
 
 
 static int adc_raw[2][10];
-static const char *TAG = "ADC SINGLE";
+static const char *TAG = "MICROSYSTEM";
 
 static esp_adc_cal_characteristics_t adc1_chars;
 
@@ -286,12 +286,13 @@ void app_main(void)
     ESP_ERROR_CHECK(adc1_config_channel_atten(ADC1_EXAMPLE_CHAN0, ADC_EXAMPLE_ATTEN));
     xTaskCreate(tcp_client_task, "tcp_client", 4096, NULL, 5, NULL);
 
-    while (0) {
+    while (1) {
         adc_raw[0][0] &= 0x0FFFF;
         adc_raw[0][0] = adc1_get_raw(ADC1_EXAMPLE_CHAN0);
         //ESP_LOGI(TAG_CH[0][0], "raw  data: %d", adc_raw[0][0]);
         if (cali_enable) {
             voltage = esp_adc_cal_raw_to_voltage(adc_raw[0][0], &adc1_chars);
+            
             //ESP_LOGI(TAG_CH[0][0], "cali data: %d mV", voltage);
         }
         vTaskDelay(pdMS_TO_TICKS(10));
