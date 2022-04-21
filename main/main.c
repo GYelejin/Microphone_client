@@ -67,10 +67,9 @@ static int s_retry_num = 0;
 
 static const char *payload = "Message from ESP32 ";
 
-
 static const char *TAG = "ad/da";
 #define V_REF 1100
-#define ADC1_TEST_CHANNEL (ADC1_CHANNEL_0)
+#define ADC1_TEST_CHANNEL (ADC1_CHANNEL_7)
 
 #define PARTITION_NAME "storage"
 
@@ -329,7 +328,6 @@ void example_i2s_adc_dac(void *arg) {
         close(sock);
       }
     }
-
   }
 }
 
