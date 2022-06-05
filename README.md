@@ -1,4 +1,4 @@
-# ADC Single Read with tcp soket
+# ADC Single Read with TCP Soket
 
 This example demonstrates the following:
 
